@@ -1,0 +1,252 @@
+body {
+    /* background-color: rgb(7, 7, 7); */
+    font-family: 'Dosis', sans-serif;;
+}
+
+.heading1 h1 {
+    color: rgb(63, 29, 29);
+    margin: 150px 180px 0px 150px;
+}
+
+.heading1 h2 {
+    color: rgb(63, 29, 29);
+    text-align: center;
+}
+
+.navbar{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly !important;
+    border-radius: 10px;
+    margin: 10px;
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.list {
+    list-style: none;
+    text-align: center;
+}
+
+.list a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.list a:hover {
+    color: rgb(222, 220, 224);
+    font-size: 25px;
+    
+}
+.portfolio {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.image {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 100;
+}
+.loader {
+    font-size: larger;
+    color: rgb(63, 29, 29);
+}
+
+@keyframes blink {
+    50% {
+        color: transparent
+    }
+}
+
+.loader__dot {
+    animation: 0.5s blink infinite
+}
+
+
+
+/* css of portfolio for mobile */
+@media (max-width: 600px) {
+    .navbar{
+
+    }
+    .list a{
+        font-size: medium;
+    }
+    
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        /* margin: 0px 0px 0px 0px; */
+    }
+    
+    .image{
+    height: 150px;
+    width: auto;
+    margin: 10px 0px;
+  }
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 100;
+}
+.heading1 h1{
+    margin: 0px 0px 0px 0px;
+    font-size: medium;
+}
+  
+.heading1 h2{
+    font-size: medium;
+    margin: 0px 0px 0px 0px;
+}
+.loader{
+    font-size: medium;
+    font-weight: 500;
+}
+.skills{
+    margin-top: 10px;
+}
+
+
+}
+
+/* skills */
+.skills{
+    background-image: url(Images/blurbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    /* height: auto; */
+    /* border-radius: 10px; */
+    font-size: small;
+}
+.skills h2{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+ 
+.box li{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    width: 200px;
+    cursor: pointer;
+}
+
+.box li:hover{
+background-color: white;
+color: black;
+text-transform: uppercase;
+font-weight: bold;
+
+}
+
+.project{
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(3,3,1,255);
+    color: white;
+    background-image: url(Images/bg3.jpg);
+    background-size: auto;
+    background-size: cover;
+    margin-bottom: 10px;
+    height: 180px;
+}
+.project h1{
+    color: rgb(255, 255, 255);
+}
+.project a{
+    color: rgb(139, 145, 145);
+    margin-top: 10px;
+}
+.project li{
+    color: rgb(255, 255, 255);
+}
+.project li:last-child{
+    margin-bottom: 10px;
+}
+
+.project a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+ .project li a{
+    text-decoration: none;
+    list-style: none;
+ }
+
+ .project li{
+    /* list-style: none; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .experiance li{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+ }
+
+ 
+ .contact img{
+height: 50px;
+width: auto;
+ }
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+
+.contact li{
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+.address iframe{
+    height: 350px;
+    width: 100%;
+}
